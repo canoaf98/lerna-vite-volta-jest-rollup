@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { helloWorld } from "common";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -15,6 +16,7 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  helloWorld();
   return (
     <html lang="en">
       <head>
