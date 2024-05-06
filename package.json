@@ -5,7 +5,7 @@
     "web:dev": "lerna run --scope web dev",
     "remix:dev": "lerna run --scope remixapp dev",
     "i": "yarn && yarn build && yarn test",
-    "build": "npx lerna run build --stream",
+    "build": "npx lerna run build --stream --concurrency 1",
     "test": "npx lerna run test --stream"
   },
   "workspaces": [
@@ -39,7 +39,7 @@
     "rollup-plugin-typescript2": "^0.31.1",
     "ts-jest": "^27.1.1",
     "tslib": "^2.3.1",
-    "typescript": "^5.2.2",
+    "typescript": "4.7.4",
     "vite": "^5.2.0"
   },
   "volta": {

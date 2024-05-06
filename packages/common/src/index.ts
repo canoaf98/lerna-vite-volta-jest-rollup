@@ -1,4 +1,4 @@
-export const helloWorld = (hello) => hello;
+export const helloWorld = (hello: string) => hello ?? '';
 
 export interface HeaderProps {
   title: string;
